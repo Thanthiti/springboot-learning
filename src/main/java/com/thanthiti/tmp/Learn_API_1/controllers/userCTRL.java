@@ -1,11 +1,11 @@
-package com.thanthiti.tmp.controllers;
+package com.thanthiti.tmp.Learn_API_1.controllers;
 
-import com.thanthiti.tmp.models.user;
-import com.thanthiti.tmp.repositories.userRepository;
+import com.thanthiti.tmp.Learn_API_1.models.user;
+import com.thanthiti.tmp.Learn_API_1.repositories.userRepository;
 import org.springframework.web.bind.annotation.*;
 
 
-import com.thanthiti.tmp.dtos.userDTO;
+import com.thanthiti.tmp.Learn_API_1.dtos.userDTO;
 
 import java.util.List;
 @RestController

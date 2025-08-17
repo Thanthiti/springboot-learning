@@ -1,6 +1,4 @@
-package com.thanthiti.tmp.models;
-
-import org.apache.catalina.User;
+package com.thanthiti.tmp.Learn_API_1.models;
 
 public class user {
 //        name,email

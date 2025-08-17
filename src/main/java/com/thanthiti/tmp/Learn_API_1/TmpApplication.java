@@ -1,4 +1,4 @@
-package com.thanthiti.tmp;
+package com.thanthiti.tmp.Learn_API_1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

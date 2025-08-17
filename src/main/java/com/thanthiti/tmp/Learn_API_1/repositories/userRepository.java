@@ -1,6 +1,6 @@
-package com.thanthiti.tmp.repositories;
+package com.thanthiti.tmp.Learn_API_1.repositories;
 
-import com.thanthiti.tmp.models.user;
+import com.thanthiti.tmp.Learn_API_1.models.user;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

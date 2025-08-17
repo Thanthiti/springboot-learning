@@ -1,4 +1,4 @@
-package com.thanthiti.tmp.dtos;
+package com.thanthiti.tmp.Learn_API_1.dtos;
 
 public class userDTO {
     private String id;

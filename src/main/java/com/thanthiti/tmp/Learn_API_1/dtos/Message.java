@@ -1,7 +1,6 @@
-package com.thanthiti.tmp.dtos;
+package com.thanthiti.tmp.Learn_API_1.dtos;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Message {
     @JsonAlias("body")
