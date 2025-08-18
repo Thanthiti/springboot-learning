@@ -10,11 +10,11 @@ import java.util.List;
 public class userRepository {
     private List<user> users = new ArrayList<>(
 
-         List.of(
-                new user("1","Thanthiti", "a@example.com"),
-                new user("2","We", "a@example.com"),
-                new user("3","Beer", "a@example.com")
-        )
+            List.of(
+                    new user("1","Thanthiti", "a@example.com"),
+                    new user("2","We", "a@example.com"),
+                    new user("3","Beer", "a@example.com")
+            )
     );
     public List<user> getUsers() {
         return users;
