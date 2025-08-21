@@ -3,6 +3,7 @@ package com.thanthiti.tmp.API_DB.controllers;
 import com.thanthiti.tmp.API_DB.dtos.userDTO;
 import com.thanthiti.tmp.API_DB.models.user;
 import com.thanthiti.tmp.API_DB.repositories.UserRepository;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -29,6 +30,15 @@ public class userCTRL {
                 .map(user -> new userDTO(user.getId(), user.getName(), user.getEmail()))
                 .orElse(null); // ถ้าไม่เจอจะได้ null
     }
+
+//    search by email by sending email to body to POST
+    @PostMapping("/user/search")
+    public userDTO searchUserByEmail(@RequestBody userDTO userDTO) {
+        return userRepository.findByEmail(userDTO.getEmail())
+                .map(user -> new userDTO(user.getId(), user.getName(), user.getEmail()))
+                .orElse(null); // ถ้าไม่เจอจะได้ null
+    }
+
 
     @PostMapping("/user")
     public String addUser(@RequestBody userDTO userDTO) {
