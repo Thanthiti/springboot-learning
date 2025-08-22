@@ -8,7 +8,7 @@ import java.util.List;
 
 @Repository
 public class userRepository {
-    private List<user> users = new ArrayList<>(
+    private final List<user> users = new ArrayList<>(
 
             List.of(
                     new user("1","Thanthiti", "a@example.com"),

@@ -1,8 +1,11 @@
 package com.thanthiti.tmp.API_DB.dtos;
 
+import jakarta.validation.constraints.NotBlank;
+
 public class userDTO {
     private long id;
     private String name;
+    @NotBlank(message =  "Email is required")
     private String email;
 
     public userDTO() {
@@ -18,11 +21,6 @@ public class userDTO {
         this.email = email;
     }
 
-
-    public long getId() {
-        return id;
-    }
-
     public String getName() {
         return name;
     }
@@ -31,11 +29,4 @@ public class userDTO {
         return email;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 }
