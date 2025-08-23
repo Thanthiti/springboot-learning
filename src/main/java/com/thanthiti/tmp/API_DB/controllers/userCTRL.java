@@ -21,7 +21,7 @@ public class userCTRL {
     @GetMapping("/user")
     public List<userDTO> getUser() {
         return userRepository.findAll().stream()
-                .map(user -> new userDTO(user.getId(), user.getName(), user.getEmail()))
+                .map(user -> new userDTO(user.getId(), user.getName(), user.getEmail(),user.getPassword()))
                 .toList();
     }
 
@@ -48,7 +48,7 @@ public userDTO searchUserByEmail(@Valid @RequestBody userDTO userDTO) {
 
     @PostMapping("/user")
     public String addUser(@RequestBody userDTO userDTO) {
-        user newUser = new user(userDTO.getName(), userDTO.getEmail());
+        user newUser = new user(userDTO.getName(), userDTO.getEmail(), "defaultPassword");
         userRepository.save(newUser);
         return "User added successfully";
     }
