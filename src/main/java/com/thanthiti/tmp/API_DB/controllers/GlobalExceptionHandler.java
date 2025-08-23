@@ -19,17 +19,6 @@ import java.util.stream.Collectors;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
-//    @ExceptionHandler(MethodArgumentNotValidException.class)
-//    public ResponseEntity<Map<String, List<String>>> handleValidationException(MethodArgumentNotValidException ex) {
-//        Map<String, List<String>> errors = new HashMap<>();
-//
-//        ex.getBindingResult().getFieldErrors().forEach(error -> {
-//            errors.computeIfAbsent(error.getField(), key -> new ArrayList<>())
-//                    .add(error.getDefaultMessage());
-//        });
-//
-//        return ResponseEntity.badRequest().body(errors);
-//    }
 
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
